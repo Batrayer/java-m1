@@ -1,5 +1,6 @@
 package fr.parisnanterre.miage.poa.td1.shapes;
 
+
 import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
 
@@ -25,7 +26,7 @@ public class Point2D {
     }
 
     public double distance(Point2D p){
-        double dist = sqrt( pow((this.x - p.x), 2) + pow((this.y - p.y),2));
+        double dist = sqrt( pow((this.x - p.x),2) + pow((this.y - p.y),2));
         return dist;
     }
 }
