@@ -19,7 +19,7 @@ public class Point2D {
         return;
     }
 
-    protected boolean isorigin(){
+    protected boolean isOrigin(){
         if(this.x == 0.0 && this.y == 0.0)
             return true;
         return false;
