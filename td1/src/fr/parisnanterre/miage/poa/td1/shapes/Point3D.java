@@ -12,12 +12,12 @@ public class Point3D extends Point2D {
         this.z = z;
     }
 
-    protected void translate(double x, double y, double z)
+    public void translate(double x, double y, double z)
     {
         super.translate(x,y);
         this.z = this.z+z;
     }
-    protected boolean isOrigin()
+    public boolean isOrigin()
     {
         if (super.isOrigin() == true)
         {
@@ -28,7 +28,7 @@ public class Point3D extends Point2D {
         }
         return false;
     }
-    protected double distance(Point3D p3d)
+    public double distance(Point3D p3d)
     {
         double dist;
         dist = sqrt(pow(this.x + p3d.x,2) + pow(this.y + p3d.y,2) + pow(this.z+p3d.z,2));

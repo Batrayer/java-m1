@@ -19,11 +19,12 @@ public class Point2D {
         return;
     }
 
-    protected boolean isOrigin(){
-        if(this.x == 0.0 && this.y == 0.0)
+    public boolean isOrigin() {
+        if (this.x == 0.0 && this.y == 0.0)
             return true;
         return false;
     }
+
 
     public double distance(Point2D p){
         double dist = sqrt( pow((this.x - p.x),2) + pow((this.y - p.y),2));

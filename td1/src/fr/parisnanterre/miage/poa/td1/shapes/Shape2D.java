@@ -8,7 +8,7 @@ public abstract class Shape2D extends shape implements Translatable2D{
         this.refpoint = refpoint2;
     }
 
-    protected abstract double perimeter();
+    public abstract double perimeter();
 
     public Point2D getRefPoint(){
         return this.refpoint;
