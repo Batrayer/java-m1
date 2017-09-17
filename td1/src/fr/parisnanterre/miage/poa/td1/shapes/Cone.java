@@ -5,9 +5,8 @@ import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
 
 public class Cone extends Shape3D {
-    private double height;
-    private double radius;
-    private Point3D z;
+    public double height;
+    public double radius;
 
     public Cone(Point3D refPoint, double height, double radius) {
         super(refPoint);
@@ -33,9 +32,6 @@ public class Cone extends Shape3D {
         return radius;
     }
 
-    public Point3D getZ() {
-        return z;
-    }
 
     public void setHeight(double height) {
         this.height = height;
@@ -45,7 +41,4 @@ public class Cone extends Shape3D {
         this.radius = radius;
     }
 
-    public void setZ(Point3D z) {
-        this.z = z;
-    }
 }
