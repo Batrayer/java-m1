@@ -1,7 +1,7 @@
 package fr.parisnanterre.miage.poa.td1.personnels;
 
 public abstract class EnseignantPermanent extends Enseignant {
-    private String domaine_Recherche;
+    String domaine_Recherche;
 
     @Override
     public String toString() {

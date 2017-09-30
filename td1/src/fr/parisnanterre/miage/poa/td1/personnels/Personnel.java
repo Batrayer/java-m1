@@ -16,6 +16,7 @@ public abstract class Personnel {
         this.prenom = prenom;
         this.securite_sociale = securite_sociale;
         this.departement = dpt;
+        dpt.add(this);
     }
 
     public String getNom() {
