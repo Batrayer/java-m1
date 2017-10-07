@@ -27,6 +27,11 @@ public class RockPaperScissorTest {
     public void testTiePlay(String p1, String p2){
         assertEquals(rps.Result_Play(RPSEnum.valueOf(p1),RPSEnum.valueOf(p2)), Result.TIE);
     }
+    @Parameters({"rock", "paper"})
+    @Test
+    public void testLostPlay(String p1, String p2){
+        assertEquals(rps.Result_Play(RPSEnum.valueOf(p1),RPSEnum.valueOf(p2)), Result.LOST);
+    }
     @AfterMethod
     public void tearDown() throws Exception {
         this.rps = null;
