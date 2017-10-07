@@ -23,4 +23,7 @@ public class RockPaperScissor {
             return Result.LOST;
         }
     }
+    public Result result_Play(Player p1, Player p2){
+        return Result.LOST;
+    }
 }
