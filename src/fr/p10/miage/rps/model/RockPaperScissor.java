@@ -5,35 +5,22 @@ public class RockPaperScissor {
     public Result Result_Play(RPSEnum p1, RPSEnum p2){
         if(p1.equals(RPSEnum.ROCK) && p2.equals(RPSEnum.PAPER)){
             return Result.LOST;
-        }
-        if(p1.equals(RPSEnum.ROCK) && p2.equals(RPSEnum.SCISSOR)){
+        }else if(p1.equals(RPSEnum.ROCK) && p2.equals(RPSEnum.SCISSOR)){
             return Result.WIN;
-        }
-        if(p1.equals(RPSEnum.ROCK)&&p2.equals(RPSEnum.ROCK))
-        {
+        }else if(p1.equals(RPSEnum.ROCK)&&p2.equals(RPSEnum.ROCK)){
             return Result.TIE;
-        }
-        if(p1.equals(RPSEnum.PAPER) && p2.equals(RPSEnum.ROCK))
-        {
+        }else if(p1.equals(RPSEnum.PAPER) && p2.equals(RPSEnum.ROCK)){
             return Result.WIN;
-        }
-        if(p1.equals(RPSEnum.PAPER)&&p2.equals(RPSEnum.SCISSOR)){
+        }else if(p1.equals(RPSEnum.PAPER)&&p2.equals(RPSEnum.SCISSOR)){
+            return Result.LOST;
+        }else if(p1.equals(RPSEnum.PAPER) && p2.equals(RPSEnum.PAPER)){
+            return Result.TIE;
+        }else if(p1.equals(RPSEnum.SCISSOR) && p2.equals(RPSEnum.SCISSOR)){
+            return Result.TIE;
+        }else if(p1.equals(RPSEnum.SCISSOR) && p2.equals(RPSEnum.PAPER)){
+            return Result.WIN;
+        }else {
             return Result.LOST;
         }
-        if(p1.equals(RPSEnum.PAPER) && p2.equals(RPSEnum.PAPER)){
-            return Result.TIE;
-        }
-        if(p1.equals(RPSEnum.SCISSOR) && p2.equals(RPSEnum.SCISSOR))
-        {
-            return Result.TIE;
-        }
-        if(p1.equals(RPSEnum.SCISSOR) && p2.equals(RPSEnum.PAPER))
-        {
-            return Result.WIN;
-        }
-        if(p1.equals(RPSEnum.SCISSOR) && p2.equals(RPSEnum.ROCK)){
-            return Result.LOST;
-        }
-        return null;
     }
 }
