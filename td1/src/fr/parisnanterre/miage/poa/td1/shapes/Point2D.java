@@ -27,7 +27,6 @@ public class Point2D {
 
 
     public double distance(Point2D p){
-        double dist = sqrt( pow((this.x - p.x),2) + pow((this.y - p.y),2));
-        return dist;
+        return sqrt( pow((this.x - p.x),2) + pow((this.y - p.y),2));
     }
 }

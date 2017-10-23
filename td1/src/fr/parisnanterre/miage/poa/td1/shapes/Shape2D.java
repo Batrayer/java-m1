@@ -1,12 +1,13 @@
 package fr.parisnanterre.miage.poa.td1.shapes;
 
-public abstract class Shape2D extends shape implements Translatable2D{
-    public Point2D refpoint;
+public abstract class Shape2D extends Shape implements Translatable2D{
+    private Point2D refpoint;
 
-    public Shape2D(Point2D refpoint2) {
+    Shape2D(Point2D refpoint2) {
         super();
         this.refpoint = refpoint2;
     }
+
 
     public abstract double perimeter();
 
@@ -17,4 +18,6 @@ public abstract class Shape2D extends shape implements Translatable2D{
     public void setRefpoint(Point2D refpoint2){
         this.refpoint = refpoint2;
     }
+
+
 }

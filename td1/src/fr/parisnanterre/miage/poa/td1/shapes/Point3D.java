@@ -19,7 +19,7 @@ public class Point3D extends Point2D {
     }
     public boolean isOrigin()
     {
-        if (super.isOrigin() == true)
+        if (super.isOrigin())
         {
             if(this.z == 0.0)
             {

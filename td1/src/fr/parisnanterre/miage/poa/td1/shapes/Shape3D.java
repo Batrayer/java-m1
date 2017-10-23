@@ -1,6 +1,6 @@
 package fr.parisnanterre.miage.poa.td1.shapes;
 
-public abstract class Shape3D extends shape implements Translatable3D{
+public abstract class Shape3D extends Shape implements Translatable3D{
     public Point3D refPoint;
 
     Shape3D(Point3D refPoint) {

@@ -1,5 +1,7 @@
 package fr.parisnanterre.miage.poa.td1.personnels;
 
+import fr.parisnanterre.miage.poa.td1.departements.Departements;
+
 import java.util.Date;
 
 public abstract class EnseignantTemporaire extends Enseignant {
@@ -15,7 +17,7 @@ public abstract class EnseignantTemporaire extends Enseignant {
         return ((CDD)contrat).getFin();
     }
 
-    EnseignantTemporaire(String nom, String prenom, double securite_sociale, CDD contrat) {
-        super(nom, prenom, securite_sociale, contrat);
+    EnseignantTemporaire(String nom, String prenom, double securite_sociale, Departements dpt, CDD contrat) {
+        super(nom, prenom, securite_sociale, dpt,contrat);
     }
 }
